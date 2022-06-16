@@ -1,0 +1,667 @@
+.socialcontainer{
+    font-family: "GothicA1-Medium";
+    .socialoverlay{
+        width: 100%;
+        height: 100%;
+        color: #858585;
+        overflow: hidden;
+        .social_intro{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #121217;
+            text-align: center;
+            div{
+                opacity: 0;
+                transition: opacity 1.25s ease-out;
+            }
+        }
+        .social_intro.inView{
+            div{
+                opacity: 1;
+            }
+        }
+        .social_beyou{
+            position: relative;
+            width: 100%;
+            .beyou_images{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                overflow: hidden;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    -o-object-position: center;
+                    object-position: center;
+                    font-family: 'object-fit: cover; object-position: center';
+                    opacity: 0;
+                    -webkit-transform: translateY(50%);
+                    transform: translateY(50%);
+                    transition: opacity 0.2s ease-in-out,-webkit-transform 0.95s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                    transition: opacity 0.2s ease-in-out,transform 0.95s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                    transition: opacity 0.2s ease-in-out,transform 0.95s cubic-bezier(0.25, 0.46, 0.45, 0.94),-webkit-transform 0.95s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                    
+                }
+                .images_wr_l{
+                    height: 100%;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    overflow: hidden;
+                    .b_images_l{
+                        img{
+                           transition-delay: 0; 
+                       }
+                    }
+                    .b_images_r{
+                        img{
+                            transition-delay: 0.125s;
+                        }
+                    }
+                    .b_images_c{
+                        img{
+                           transition-delay: 0.375s; 
+                       }
+                    }
+                }
+                .images_wr_r{
+                    height: 100%;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    overflow: hidden;
+                    .b_images_l{
+                        img{
+                            transition-delay: 0.4s;
+                        }
+                    }
+                    .b_images_r{
+                        img{
+                            transition-delay: 0.4125s;
+                        }
+                    }
+                    .b_images_c{
+                        img{
+                            transition-delay: 0.250s;
+                        }
+                    }
+                }
+                .b_images_l{
+                    display: inline-block;
+                    height: 65%;
+                    width: 50%;
+                    // padding: 1px;
+                    overflow: hidden;
+                    
+                }
+                .b_images_r{
+                    display: inline-block;
+                    height: 65%;
+                    width: 50%;
+                    // padding: 1px;
+                    overflow: hidden;
+                    
+                }
+                .b_images_c{
+                    display: inline-block;
+                    height: 35%;
+                    width: 100%;
+                    // padding: 1px;
+                    overflow: hidden;
+                    
+                }
+            }
+            .beyou_about{
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                text-align: center;
+                color: #d0d0d0;
+                opacity: 0;
+                transition: opacity 1.6s ease-in-out;
+                transition-delay: 0.425s;
+                z-index: 100;
+            }
+        }
+        .social_beyou.inView{
+            .beyou_images{
+                img{
+                    opacity: .7;
+                    -webkit-transform: translateY(0%);
+                    transform: translateY(0%);
+                    transition-delay: 0 !important;
+                    // &:hover{
+                    //     opacity: 1;
+                    //     transform: scale(1.07);
+                    // }
+                }
+                .images_wr_l{
+                //     .b_images_l{
+                //         img{
+                //            transition-delay: 0; 
+                //        }
+                //     }
+                //     .b_images_r{
+                //         img{
+                //             transition-delay: 0s;
+                //         }
+                //     }
+                //     .b_images_c{
+                //         img{
+                //            transition-delay: 0s; 
+                //        }
+                //     }
+                // }
+                // .images_wr_r{
+                //     .b_images_l{
+                //         img{
+                //             transition-delay: 0s;
+                //         }
+                //     }
+                //     .b_images_r{
+                //         img{
+                //             transition-delay: 0s;
+                //         }
+                //     }
+                //     .b_images_c{
+                //         img{
+                //             transition-delay: 0s;
+                //         }
+                //     }
+                }
+            }
+            .beyou_about{
+                opacity: 1;
+            }
+        }
+        .social_diversity{
+            width: 100%;
+            background: #121217;
+            .diversity_images{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                img{
+                    opacity: 0;
+                    transition: opacity 0.95s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                }
+                .d_images_l{
+                    width: 35%;
+                    transition-delay: .3s;
+                }
+                .d_images_c{
+                    width: 30%;
+                }
+                .d_images_r{
+                    width: 35%;
+                    transition-delay: .3s;
+                }
+            }
+            .diversity_about{
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition: opacity 1.6s ease-in-out;
+            }
+        }
+        .social_diversity.inView{
+            .diversity_images{
+                img{
+                    opacity: 1;
+                }
+            }
+            .diversity_about{
+                opacity: 1;
+            }
+        }
+        .social_passion{
+            width: 100%;
+            display: flex;
+            position: relative;
+            .passion_about{
+                position: absolute;
+                left: 50%;
+                top:50%;
+                transform: translate(-50%,-50%);
+                width: 100%;
+                text-align: center;
+                margin: auto;
+                z-index: 10;
+                color: #d0d0d0;
+                opacity: 0;
+                transition: opacity 1.2s ease-in-out;
+            }
+            .passion_images{
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                display: flex;
+
+                .p_images_l{
+                    // background: #85889b url("/zeeshaan-shabbir-9746513.jpg");
+                    background: url("https://images.pexels.com/photos/9746513/pexels-photo-9746513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+                    // background-blend-mode: multiply;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-position: left;
+                    opacity: 0.7;
+                    width: 33.33%;
+                }
+                .p_images_c{
+                    // background: #85889b url("/duané-viljoen-10572773.jpg");
+                    background: url("https://images.pexels.com/photos/10572773/pexels-photo-10572773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+                    // background-blend-mode: multiply;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-position: center;
+                    opacity: 0.7;
+                    width: 33.33%;
+                }
+                .p_images_r{
+                    // background: #85889b url("/lan-johnson-4614512.jpg");
+                    background: url("https://images.pexels.com/photos/5097418/pexels-photo-5097418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+                    // background-blend-mode: multiply;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-position: right;
+                    opacity: 0.7;
+                    width: 33.33%;
+                }
+                
+            }
+        }
+        .social_passion.inView{
+            .passion_about{
+                opacity: 1;
+            }
+        }
+        .social_love{
+            width: 100%;
+            display: flex;
+            .love_about{
+                width: 60%;
+                text-align: center;
+                margin: auto;
+                opacity: 0;
+                transition: opacity 1.6s ease-in-out;
+            }
+            .love_images{
+                width: 40%;
+                video{
+                    display: block;
+                    width: 100%;
+                    opacity: 0;
+                    transition: opacity 0.6s ease-in-out;
+                }
+            }
+        }
+        .social_love.inView{
+            
+            .love_about{
+                opacity: 1;
+            }
+            .love_images{
+                video{
+                    opacity: 1;
+                }
+            }
+        }
+        .social_info{
+            width: 100%;
+            background-color: #121217;
+            .info_about{
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                .info_subtitle{
+                    opacity: 0;
+                    transition: opacity 1.2s ease-in-out;
+                    .subtitle_strong{
+                        display: inline-flex;
+                        width: 0;
+                        overflow: hidden;
+                        visibility: hidden;
+                        transform: scale(0);
+                        transition: all 650ms ease-out;
+                        transition-delay: 2s;
+                        justify-content: center;
+                    }
+                }
+                button{
+                    margin-top: 48px;
+                    align-items: center;
+                    background: transparent;
+                    border: none;
+                    color: white;
+                    display: inline-flex;
+                    justify-content: center;
+                    letter-spacing: 0;
+                    min-width: 75px;
+                    position: relative;
+                    text-align: center;
+                    text-decoration: none;
+                    opacity: 0;
+                    transition: all 500ms cubic-bezier(0, .61, .28, .92), filter 500ms cubic-bezier(0, .61, .28, .92), -webkit-filter 500ms cubic-bezier(0, .61, .28, .92);
+                    white-space: nowrap;
+                    border-radius: 50px;
+                    border: 1px solid white;
+                    a{
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                    &:hover{
+                        background-color: #6a7bff;
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+        }
+        .social_info.inView{
+            .info_about{
+                .info_subtitle{
+                    opacity: 1;
+                    .subtitle_strong{
+                        transform: scale(1);
+                        visibility: visible;
+                    }
+                }
+                button{
+                    opacity: 1;
+                }
+            }
+        }
+        .social_footer{
+            width: 100%;
+            position: relative;
+        }
+    }
+    
+}
+.panel{
+    overflow: hidden;
+}
+
+.rails_logo{
+    max-height: 32px;
+    filter: invert(15%) sepia(95%) saturate(3482%) hue-rotate(354deg) brightness(82%) contrast(124%);
+}
+
+@media only screen and (min-width: 960px) { 
+
+    .socialcontainer{
+        .socialoverlay{
+            .social_intro{
+                font-size: 42px;
+            }
+            .social_beyou{
+                .beyou_images{
+                    height: 100vh;
+                }
+                .beyou_about{
+                    font-size: 36px;
+                }
+            }
+            .social_diversity{
+                padding-top: 100px;
+                padding-bottom: 100px;
+                .diversity_images{
+                    img{
+                        
+                    }
+                    .d_images_c{
+                        padding: 25px; 
+                    }
+                }
+                .diversity_about{
+                    padding-top: 25px;
+                    font-size: 36px;
+                }
+            }
+            .social_passion{
+                padding-top: 250px;
+                padding-bottom: 250px;
+                .passion_images{
+                    height: 75vh;
+                    .p_images_l{
+                        background-size: contain;
+                    }
+                    .p_images_c{
+                        background-size: contain;
+                    }
+                    .p_images_r{
+                        background-size: contain;
+                    }
+                }
+                .passion_about{
+                    font-size: 36px;
+                }
+            }
+            .social_love{
+                padding-bottom: 250px;
+                .love_about{
+                    font-size: 36px; 
+                }
+                .love_images{
+                    padding: 0 150px;
+                }
+            }
+            .social_info{
+                .info_about{
+                    .info_title{
+                        font-size: 54px;
+
+                    }
+                    .info_subtitle{
+                        font-size: 18px;
+                    }
+                    button{
+                        font-size: 16px;
+                        padding: 16px 44px;
+                    }
+                }
+            }
+            .social_info.inView{
+                .info_about{
+                    .info_subtitle{
+                        .subtitle_strong{
+                            margin-left: 4px;
+                            margin-right: 4px;
+                            width: 36px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width:576px) and (max-width: 960px) { 
+
+    .socialcontainer{
+        .socialoverlay{
+            .social_intro{
+                font-size: 18px;
+            }
+            .social_beyou{
+                .beyou_images{
+                    height: 80vh;
+                }
+                .beyou_about{
+                    font-size: 20px;
+                }
+            }
+            .social_diversity{
+                padding-top: 75px;
+                padding-bottom: 75px;
+                .diversity_images{
+                    img{
+                        
+                    }
+                    .d_images_c{
+                        padding: 12px; 
+                    }
+                }
+                .diversity_about{
+                    font-size: 20px;
+                    padding-top: 25px;
+                    padding-bottom: 0;
+                }
+            }
+            .social_passion{
+                padding-top: 100px;
+                padding-bottom: 100px;
+                .passion_about{
+                    font-size: 20px;
+                }
+                .passion_images{
+                    height: 75vh;
+                }
+            }
+            .social_love{
+                padding-bottom: 100px;
+                .love_about{
+                    width: 50%;
+                    font-size: 20px; 
+                }
+                .love_images{
+                    width: 50%;
+                    padding: 0 20px;
+                }
+            }
+            .social_info{
+                .info_about{
+                    .info_title{
+                        font-size: 30px;
+
+                    }
+                    .info_subtitle{
+                        font-size: 12px;
+                    }
+                    button{
+                        font-size: 14px;
+                        padding: 12px 32px;
+                    }
+                }
+            }
+            .social_info.inView{
+                .info_about{
+                    .info_subtitle{
+                        .subtitle_strong{
+                            margin-left: 3px;
+                            margin-right: 3px;
+                            width: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 576px) { 
+
+    .socialcontainer{
+        .socialoverlay{
+            .social_intro{
+                font-size: 16px;
+            }
+            .social_beyou{
+                .beyou_images{
+                    height: 50vh;
+                }
+                .beyou_about{
+                    font-size: 18px;
+                }
+            }
+            .social_diversity{
+                padding-top: 100px;
+                padding-bottom: 100px;
+                .diversity_images{
+                    .d_images_c{
+                        padding: 6px; 
+                    }
+                }
+                .diversity_about{
+                    font-size: 18px;
+                    padding-top: 25px;
+                    padding-bottom: 0;
+                }
+            }
+            .social_passion{
+                padding-top: 100px;
+                padding-bottom: 100px;
+                .passion_about{
+                    font-size: 18px;
+                }
+                .passion_images{
+                    height: 60vh;
+                    .p_images_l{
+                        background-size: cover;
+                    }
+                    .p_images_c{
+                        background-size: cover;
+                    }
+                    .p_images_r{
+                        background-size: cover;
+                    }
+                }
+            }
+            .social_love{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                .love_about{
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 100%;
+                    color: white;
+                    font-size: 18px; 
+                }
+                .love_images{
+                    width: 100%;
+                    opacity: .75;
+                }
+            }
+            .social_info{
+                .info_about{
+                    .info_title{
+                        font-size: 28px;
+                    }
+                    .info_subtitle{
+                        font-size: 12px;
+                    }
+                    button{
+                        font-size: 12px;
+                        padding: 8px 24px;
+                    }
+                }
+            }
+            .social_info.inView{
+                .info_about{
+                    .info_subtitle{
+                        .subtitle_strong{
+                            margin-left: 3px;
+                            margin-right: 3px;
+                            width: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

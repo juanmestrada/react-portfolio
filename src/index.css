@@ -1,13 +1,52 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  /* overflow: hidden; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+section{
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+html {
+  background-color: black;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+  background: transparent;  
+}
+
+@font-face {
+  font-family: 'druk';
+  src: local('druk'), url(./fonts/druk.woff) format('woff');
+}
+@font-face {
+  font-family: 'freehand';
+  src: local('freehand'), url(./fonts/freehand.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GothicA1-Medium';
+  src: local('GothicA1-Medium'), url(./fonts/GothicA1-Medium.ttf) format('truetype');
 }

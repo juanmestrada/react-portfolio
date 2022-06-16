@@ -1,0 +1,85 @@
+.ems_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    .ems_info{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        .badges{
+            width: 100%;
+            img{
+                height: 45px;
+            }
+        }
+        .about{
+            font-size: 24px;
+            color: white;
+            font-family: monospace;
+        }
+    }
+}
+
+@media only screen and (min-width: 960px) { 
+    .ems_overlay{
+        .ems_info{
+            width: 55%;
+            padding: 35px;
+            .badges{
+                margin-bottom: 20px;
+                img{
+                    height: 45px;
+                }
+            }
+            .about{
+                font-size: 24px;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width:959px)  {
+    .ems_overlay{
+        .ems_info{
+            width: 60%;
+            padding: 10px 25px;
+            .badges{
+                margin-bottom: 15px;
+                img{
+                    height: 40px;
+                }
+            }
+            .about{
+                font-size: 18px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:639px) { 
+    .ems_overlay{
+        .ems_info{
+            width: 85%;
+            padding: 10px 20px;
+            .badges{
+                margin-bottom: 5px;
+                img{
+                    height: 35px
+                }
+            }
+            .about{
+                font-size: 16px;
+            }
+        }
+    }
+ }
+
+
+  
+

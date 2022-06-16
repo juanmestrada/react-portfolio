@@ -1,0 +1,17 @@
+.Logo {
+    box-sizing: border-box;
+}
+
+
+
+@media only screen and (min-width: 960px) {
+    .Logo img {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 959px) { 
+    .Logo img {
+        height: 20px;
+    }
+}

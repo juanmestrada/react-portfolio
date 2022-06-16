@@ -1,0 +1,40 @@
+.NavigationItem {
+  
+    height: 100%;
+}
+
+
+.NavigationItem{
+    a{
+        color: red;
+        text-decoration: none;
+        font-family: "druk";
+        text-transform: uppercase;
+        line-height: 1;
+    }
+    
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active {
+    color: white;
+}
+
+@media only screen and (min-width: 960px) {
+    .NavigationItem{
+        a{
+            font-size: 7rem;
+            letter-spacing: .3rem;
+        }  
+    }
+}
+
+@media only screen and (max-width:959px)  {
+    .NavigationItem{
+        a{
+            font-size: 40px;
+            letter-spacing: .2rem;
+        }  
+    }
+}
